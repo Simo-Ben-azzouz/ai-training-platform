@@ -5,6 +5,7 @@ using EntityFramework.Exceptions.MySQL.Pomelo;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using System;
 
 namespace Boilerplate.Api.Configurations;
 
@@ -21,7 +22,7 @@ public static class PersistenceSetup
 
             o.UseMySql(
                 connectionString,
-                ServerVersion.AutoDetect(connectionString));
+                new MySqlServerVersion(new Version(8, 0, 36)));
 
             o.UseExceptionProcessor();
         });
