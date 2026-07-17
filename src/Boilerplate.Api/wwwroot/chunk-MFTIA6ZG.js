@@ -1,0 +1,1 @@
+import"./chunk-IFGU66OU.js";var t=[{path:"",loadComponent:()=>import("./chunk-RG4CGO4H.js").then(o=>o.Sessions)},{path:":id",loadComponent:()=>import("./chunk-PA4SQQEO.js").then(o=>o.SessionDetails)}];export{t as SESSIONS_ROUTES};

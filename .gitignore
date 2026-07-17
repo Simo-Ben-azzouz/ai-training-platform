@@ -363,3 +363,13 @@ tools/
 .idea/
 
 .DS_Store
+
+# Published output
+src/published/
+
+# .NET publish output
+**/publish/
+
+# Build outputs
+**/bin/
+**/obj/

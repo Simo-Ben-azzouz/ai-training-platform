@@ -1,0 +1,1 @@
+import"./chunk-IFGU66OU.js";var t=[{path:"",loadComponent:()=>import("./chunk-XTLNQ77H.js").then(o=>o.Formations)},{path:":id",loadComponent:()=>import("./chunk-BPO62HUI.js").then(o=>o.FormationDetails)}];export{t as FORMATIONS_ROUTES};

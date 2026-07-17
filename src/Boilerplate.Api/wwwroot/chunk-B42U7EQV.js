@@ -1,0 +1,1 @@
+import"./chunk-IFGU66OU.js";var t=[{path:"",loadComponent:()=>import("./chunk-XKU6XFSB.js").then(o=>o.AnamTrainer)},{path:":sessionId",loadComponent:()=>import("./chunk-XKU6XFSB.js").then(o=>o.AnamTrainer)}];export{t as ANAM_ROUTES};

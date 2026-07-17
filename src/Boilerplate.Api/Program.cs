@@ -68,16 +68,22 @@ app.UseRouting();
 app.UseSwaggerSetup();
 app.UseHsts();
 
-app.UseResponseCompression();
 app.UseHttpsRedirection();
 
 app.UseAuthentication();
 app.UseAuthorization();
+
+// Serve Angular static files
+app.UseDefaultFiles();
+app.UseStaticFiles();
 
 app.MapCategoryEndpoints();
 app.MapFormationEndpoints();
 app.MapSessionEndpoints();
 app.MapAnamEndpoints();
 app.MapGroup("api/identity").WithTags("Identity").MapIdentityApi<ApplicationUser>();
+
+// SPA fallback
+app.MapFallbackToFile("index.html");
 
 await app.RunAsync();
