@@ -11,7 +11,7 @@ RUN npm install
 
 COPY frontend/ .
 
-RUN npm run build --configuration production
+RUN npx ng build frontend --configuration production
 
 # ============================================================
 # STAGE 2 - Build .NET
