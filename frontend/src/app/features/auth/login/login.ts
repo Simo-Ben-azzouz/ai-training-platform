@@ -362,10 +362,37 @@ color:#ff9a9a;
 }
 
 .submit{
-height:48px!important;
-border-radius:8px!important;
-background:var(--ink)!important;
-color:white!important;
+    height:54px !important;
+    width:100%;
+    border-radius:14px !important;
+
+    background:linear-gradient(
+        135deg,
+        var(--brand),
+        var(--brand-strong)
+    ) !important;
+
+    color:white !important;
+
+    font-size:15px;
+    font-weight:600;
+    letter-spacing:.2px;
+
+    box-shadow:
+        0 10px 28px rgba(87,89,217,.35);
+
+    transition:.25s ease;
+}
+
+.submit:hover:not(:disabled){
+    transform:translateY(-2px);
+    box-shadow:
+        0 16px 34px rgba(87,89,217,.45);
+}
+
+.submit:disabled{
+    opacity:.65;
+    cursor:not-allowed;
 }
 
 .spinner{
